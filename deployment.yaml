@@ -12,11 +12,11 @@ spec:
       metadata:
          labels:
             app: expressjs-backend
-   spec:
-      containers:
-         - name: expressjs-backend
-           image: wcfluxreg.azurecr.io/fluxexamples/express-server:flux
-           ports:
-            - containerPort: 4000
-      imagePullSecrets:
-         - name: acr-secret
+      spec:
+         containers:
+            - name: expressjs-backend
+              image: wcfluxreg.azurecr.io/fluxexamples/express-server:flux
+              ports:
+               - containerPort: 4000
+         imagePullSecrets:
+            - name: acr-secret
